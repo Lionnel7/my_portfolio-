@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Lionnel Obiang - Portfolio Professionnel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --accent: #58a6ff;
+            --accent-success: #3fb950;
+            --accent-purple: #bc8cff;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg); color: var(--text-main); font-family: 'Space Grotesk', sans-serif; line-height: 1.6; }
+        
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 40px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
+        h2 { font-size: 1.8rem; color: #fff; border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-top: 40px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        h2 i { color: var(--accent); }
+        h3 { color: var(--accent); margin-bottom: 10px; }
+
+        .badge { background: rgba(88, 166, 255, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(88, 166, 255, 0.2); font-family: 'JetBrains Mono', monospace; }
+        .badge-perso { background: rgba(188, 140, 255, 0.1); color: var(--accent-purple); border-color: rgba(188, 140, 255, 0.2); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--surface); border: 1px solid var(--border); padding: 25px; border-radius: 8px; margin-bottom: 20px; }
+        
+        .skill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-tag { background: #21262d; border: 1px solid var(--border); padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; font-family: 'JetBrains Mono', monospace; }
+
+        code { font-family: 'JetBrains Mono', monospace; background: #21262d; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem; color: #ff7b72; }
+        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--border); margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pierre Lionnel OBIANG</h1>
+        <p style="font-size: 1.2rem; color: var(--accent); font-weight: 500;">Technicien Supérieur Systèmes et Réseaux (SISR) | Passionné de Cybersécurité</p>
+        <div style="margin-top: 15px;">
+            <span class="badge">IRIS Médiaschool Toulouse</span>
+            <span class="badge">BTS SIO 1ère année</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="a-propos">
+            <h2><i class="fa-solid fa-user"></i> À propos de moi</h2>
+            <p>Passionné par les infrastructures réseaux, l'administration de serveurs et la cybersécurité, j'acquiers au quotidien les compétences nécessaires pour concevoir, déployer et sécuriser des solutions informatiques modernes dans le cadre de mon option <strong>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</strong>.</p>
+        </section>
+
+        <section id="competences">
+            <h2><i class="fa-solid fa-layer-group"></i> Compétences Référentiel SISR</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fa-solid fa-network-wired"></i> Support & Réseau</h3>
+                    <p>Administration de réseaux locaux, gestion des flux, routage et commutation.</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">Cisco IOS</span>
+                        <span class="skill-tag">VLANs / Trunking</span>
+                        <span class="skill-tag">Routage statique & dynamique</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-server"></i> Systèmes & Sécurité</h3>
+                    <p>Déploiement d'environnements virtualisés, automatisation et durcissement système.</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">Linux (Debian/Ubuntu)</span>
+                        <span class="skill-tag">Scripting Bash & Python</span>
+                        <span class="skill-tag">Virtualisation (VirtualBox)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="realisations-cours">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Réalisations Académiques (Projets de cours)</h2>
+            
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <h3>Segmentation réseau d'entreprise (VLANs)</h3>
+                    <span class="badge" style="color: var(--accent-success); border-color: rgba(63, 185, 80, 0.3); background: rgba(63, 185, 80, 0.1);">Validé</span>
+                </div>
+                <p><strong>Contexte :</strong> Sécurisation et optimisation des performances du réseau local d'une entreprise non segmentée.</p>
+                <p style="margin-top: 10px;"><strong>Technologies :</strong> Cisco Packet Tracer, Commutateurs Catalyst, Protocoles 802.1Q.</p>
+                <p style="margin-top: 10px;"><strong>Actions menées :</strong> Conception d'un plan d'adressage IP par sous-réseaux, configuration des ports d'accès, mise en place des liaisons Trunk et routage inter-VLAN (Router-on-a-stick) pour cloisonner les flux de l'entreprise.</p>
+            </div>
+        </section>
+
+        <section id="projets-perso">
+            <h2><i class="fa-solid fa-laptop-code"></i> Projets Personnels & Passion</h2>
+            
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <h3>Développement d'outils d'automatisation & de sécurité</h3>
+                    <span class="badge badge-perso">Projet Personnel</span>
+                </div>
+                <p><strong>Description :</strong> Écriture de scripts personnalisés pour automatiser des tâches d'administration et renforcer la surveillance.</p>
+                <p style="margin-top: 10px;"><strong>Technologies :</strong> Python, Bash, Regex, Analyse de logs.</p>
+                <p style="margin-top: 10px;"><strong>Actions menées :</strong> Conception de scripts d'automatisation système sous Linux et développement de scripts Python permettant de parser et analyser des journaux d'événements (logs) afin de détecter des comportements anormaux ou des tentatives de connexion suspectes.</p>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <h3>Entraînement en Cybersécurité & Hacking Éthique</h3>
+                    <span class="badge badge-perso">Compétition / CTF</span>
+                </div>
+                <p><strong>Description :</strong> Résolution de challenges de sécurité informatique (Capture The Flag) pour développer des compétences en tests d'intrusion et analyse de vulnérabilités.</p>
+                <p style="margin-top: 10px;"><strong>Plateformes & OS :</strong> Kali Linux, Root-Me, OverTheWire.</p>
+                <p style="margin-top: 10px;"><strong>Compétences développées :</strong> Compréhension des failles systèmes et réseaux, manipulation des outils de sécurité sous Kali Linux, et renforcement des bases en sécurité informatique grâce aux niveaux du wargame OverTheWire (Bandit).</p>
+            </div>
+        </section>
+
+        <section id="veille">
+            <h2><i class="fa-solid fa-satellite-dish"></i> Veille Technologique</h2>
+            <div class="card">
+                <h3>Sujet : L'évolution de l'Intelligence Artificielle en Cybersécurité</h3>
+                <p>Suivi de l'impact du Machine Learning dans les outils de détection d'intrusions (IDS/IPS) et l'analyse automatisée des vulnérabilités.</p>
+                <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.9rem;"><strong>Outils utilisés :</strong> Flux RSS via Feedly, alertes de sécurité, bulletins du CERT-FR (ANSSI).</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Pierre Lionnel OBIANG - Portfolio Professionnel E5
+    </footer>
+
+</body>
+</html>
